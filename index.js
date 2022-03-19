@@ -1,4 +1,4 @@
-alert("Bienvenidx! Para incribirse en el curso debe llenar el siguiene fomulario.")
+alert("Bienvenidos! Para subscribirte al newstletter debes llenar el siguiente formulario.")
 
 var nombre = prompt("Por favor ingrese su nombre")
 var apellido = prompt("Por favor ingrese su apellido")
@@ -14,14 +14,14 @@ var edad = parseInt(prompt("Por favor, indique su edad"))
 
 if ((edad < 18) || (edad > 35)) {
     alert("Lo sentimos. Usted deber tener entre 18 y 35 años para participar.")
-} 
-else {
+    
+} else {
     alert("Gracias, puede continuar con la suscripción")
 }
 
 var ubicacion = prompt("Por favor, indique en mayúscula si reside en CABA, PROVINCIA DE BS AS u OTRO.")
 
-if (ubicacion == "CABA") {
+if (ubicacion == "CABA" ) {
     alert("Gracias, puede continuar con la suscripción")
 } 
 else if (ubicacion == "PROVINCIA DE BS AS") {
@@ -35,7 +35,8 @@ var celular = parseInt(prompt("Por favor, ingrese su número de celular."))
 if (celular >10000000) {
     alert("El numero celular ingresado es: "+celular)
 } else {
-    prompt("Debe ingresar un número de celular para que podamos contactarnos con usted.")
+    prompt("Debe ingresar un número de celular valido.")
 }
 
-alert("Inscripción finalizada.")
+
+alert("Inscripción finalizada.\nVos te llamas "+nombreCompleto+"\nTenes "+edad+"\nVivis en "+ubicacion+"\nY tu celular es "+celular)
